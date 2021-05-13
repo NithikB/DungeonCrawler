@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InitialConfigController">
+    <children>
+        <ImageView fitHeight="675.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/dungeon.jpg" />
+            </image>
+        </ImageView>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="configTitleTest" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Configure The Game">
+               <font>
+                  <Font size="46.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="375.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fx:id="configNameTitle" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Name">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="210.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="nameText" alignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="353.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                     </padding></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose A Difficulty" textOrigin="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="210.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ChoiceBox fx:id="difficultyChoice" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="335.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="50.0" top="10.0" />
+                     </padding></ChoiceBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Starting Weapon" textOrigin="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="210.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ChoiceBox fx:id="weaponChoice" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="215.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="50.0" top="10.0" />
+                     </padding></ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="incorrectConfig" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="450.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="23.0" />
+                     </font></Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="-10.0" top="-10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                      <Button fx:id="confirmButton" alignment="CENTER" mnemonicParsing="false" onAction="#config" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: skyblue;-fx-font-family: monaco;" text="Confirm Configuration" textAlignment="CENTER" textFill="BLACK">
+                          <font>
+                              <Font size="18.0" />
+                          </font>
+                     <HBox.margin>
+                        <Insets left="475.0" />
+                     </HBox.margin>
+                      </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</StackPane>

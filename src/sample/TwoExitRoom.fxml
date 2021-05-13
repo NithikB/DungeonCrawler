@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TwoExitRoomController">
+    <children>
+        <ImageView fx:id="backImage" fitHeight="675.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/room2.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="roomHead" fill="WHITE" layoutX="410.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room 2">
+            <font>
+                <Font name="System Bold" size="49.0" />
+            </font>
+            <StackPane.margin>
+                <Insets bottom="500.0" />
+            </StackPane.margin>
+        </Text>
+        <Text fx:id="gold" fill="#fffb00" layoutX="521.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gold: ">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+            <StackPane.margin>
+                <Insets left="920.0" top="600.0" />
+            </StackPane.margin>
+        </Text>
+      <Button fx:id="exit1" mnemonicParsing="false" onAction="#exit1" prefWidth="130.0" text="Exit 1" textAlignment="CENTER">
+         <StackPane.margin>
+            <Insets bottom="230.0" right="350.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="exit2" layoutX="370.0" layoutY="213.0" mnemonicParsing="false" onAction="#exit2" prefWidth="130.0" text="Exit 2" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <StackPane.margin>
+            <Insets bottom="230.0" left="300.0" />
+         </StackPane.margin>
+      </Button>
+        <Text fx:id="hp" fill="#2ac219" layoutX="521.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HP:">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+            <effect>
+            <Glow />
+            </effect>
+            <StackPane.margin>
+                <Insets left="870.0" top="450.0" />
+            </StackPane.margin>
+        </Text>
+      <ImageView fx:id="monster" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0" scaleZ="2.0">
+         <image>
+            <Image url="@/images/monster3.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="attackBtn" mnemonicParsing="false" onAction="#attack" text="Attack! HP: 150">
+         <StackPane.margin>
+            <Insets top="300.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="prevBtn" mnemonicParsing="false" onAction="#prev" text="Retreat">
+         <StackPane.margin>
+            <Insets right="994.0" top="500.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="hitBtn" mnemonicParsing="false" onAction="#hit" text="CLICK!">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="inventoryBtn" layoutX="70.0" layoutY="578.0" mnemonicParsing="false" onAction="#inv" text="Inventory">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <StackPane.margin>
+            <Insets left="1000.0" top="320.0" />
+         </StackPane.margin>
+      </Button>
+      <Text fx:id="alert" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="+1 ">
+         <StackPane.margin>
+            <Insets top="200.0" />
+         </StackPane.margin>
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="gAppleBonus" fill="WHITE" layoutX="582.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+3 Golden Apples!!!">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <StackPane.margin>
+            <Insets right="840.0" />
+         </StackPane.margin>
+      </Text>
+    </children>
+</StackPane>

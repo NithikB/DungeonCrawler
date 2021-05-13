@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WinScreenController">
+    <children>
+        <ImageView fitHeight="675.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/winScreen.jpg" />
+         </image></ImageView>
+        <VBox alignment="CENTER" spacing="100.0">
+         <Text fx:id="roomHead" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="CONGRATULATIONS BRAVE ADVENTURER">
+            <font>
+               <Font name="System Bold" size="36.0" />
+            </font>
+         </Text>
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="restartButton" alignment="CENTER" mnemonicParsing="false" onAction="#restart" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: skyblue;-fx-font-family: monaco;" text="RESTART GAME" textAlignment="CENTER" textFill="BLACK" textOverrun="CLIP">
+                  <font>
+                     <Font name="System Bold" size="22.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="290.0" />
+                  </HBox.margin>
+               </Button>
+              <Button fx:id="exitButton" alignment="CENTER" mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: skyblue;-fx-font-family: monaco;" text="EXIT GAME" textAlignment="CENTER" textFill="BLACK" textOverrun="CLIP">
+                  <font>
+                      <Font name="System Bold" size="22.0" />
+                  </font>
+                  <HBox.margin>
+                     <Insets left="115.0" />
+                  </HBox.margin>
+              </Button>
+            </children>
+            <VBox.margin>
+               <Insets top="320.0" />
+            </VBox.margin>
+         </HBox>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+        </VBox>
+        <Text fx:id="monst" fill="#ee5b5b" layoutX="412.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monsters Killed: ">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+            <StackPane.margin>
+                <Insets bottom="400.0" left="550.0" />
+            </StackPane.margin>
+        </Text>
+        <Text fx:id="room" fill="#007500" layoutX="69.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms Visited: ">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+            <StackPane.margin>
+                <Insets bottom="300.0" left="530.0" top="50.0" />
+            </StackPane.margin>
+        </Text>
+        <Text fx:id="mny" fill="#cac72a" layoutX="69.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money Obtained: ">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+            <StackPane.margin>
+                <Insets bottom="300.0" left="560.0" top="200.0" />
+            </StackPane.margin>
+        </Text>
+    </children>
+</StackPane>
